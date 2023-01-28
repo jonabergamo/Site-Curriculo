@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Oliveira Bergamo</title>
+    <link rel="stylesheet" type="text/css" href="Estilo.css">
+</head>
+<body>
+<div id = "progressbar"></div>
+<div id = "scrollPath"></div>
+    <header class="cabeçalho">
+            <div class="quadrado-foto"></div>
+            <img src="eu.png" class="minha-foto">
+        <div class="quadrado-meio"></div>
+        <div class="quadrado-cabeçalho"></div>
+        <div class="informacoes">
+        <h1 class="Nome-protagonista">Jonathan Oliveira Bergamo</h1>
+        <h2 class="Função">Programador Iniciante, UI/UX Design, JS e Python</h2>
+        </div>
+        <div class="elementos-canto">
+        <img class="vetor-1" src="Vector 5.png" alt="Vector 5.png">
+        <img class="vetor-2"src="Vector 6.png" alt="Vector 6.png">
+        <img class="vetor-3"src="Vector 7.png" alt="Vector 7.png">
+        </div>
+    </header>
+
+    <main class="principal">
+        <h3 class="subtitulo-background-1" >Detalhes</h3>
+        <p class="detalhes-texto">Brasil</p>
+        <a class="detalhes-texto1" href ="mailto:jonathanbergamo16@gmail.com">jonathanbergamo16@gmail.com</a>
+        <a class="detalhes-texto1" href ="https://api.whatsapp.com/send?phone=5515998712965">+55 15 998712965</a>
+        <h3 class="subtitulo-background-2">Perfil</h3>
+        <p class="perfil-texto">Estou apenas começando na área de programação, meu objetivo é me tornar um especialista na área de 
+            criação de sites e manipulação de dados, desenvolvendo tanto front-end quanto <br>back-end.
+        </p>
+        <h3 class="subtitulo-background-3">Carreira</h3>
+        <h4><strong>Edição de vídeos Freelancer</strong></h4>
+        <p class="carreira-texto">Eu trabalhava como editor de vídeos e sempre tive facilidade em operar sofwares e sites, 
+          e também utilizava softares de modelagem e renderização 3D, como Cinema 4D e Blender.
+        </p>
+        <h4><strong>Aprendiz Eletricista de Manutenção Toyota</strong></h4>
+        <p class="carreira-texto"> Durante este periodo, desenvolvi altas habilidades em programação em linguagem
+            ladder, muito utilizada na industria para o desenvolvimento de sistemas autonomos</p>
+            <div class="facul"> <h4><strong>Estágio 2RP Net</strong></h4><h4 class="working">[ACTUAL]</h4></div>
+            <p class="carreira-texto"> Estou começando agora.</p>
+          <h3 class="subtitulo-background-3">Estudos</h3>
+        <h4><strong>Técnico em Mecatrônica - SENAI</strong></h4>
+        <p class="carreira-texto">Esse curso, com uma carga horaria de 2 anos, me ensinou sobre programação de micro-controladores
+            e desenvolvimento de sistemas automatizados através da linguagem ladder.
+            <h4><strong>Eletricista de Manutenção Eletroeletrônica</strong></h4>
+            <p class="carreira-texto">Durante esse periodo estagiei como aprendiz na empresa Toyota, onde desenvolvi habilidades
+                sociais e de trabalho em equipe, além de estudar sobre a programação de robôs de solda.</p>   
+                <div class = "facul"><h4><strong>CST - Análise e Desenvolvimento de Sistemas - Faculdade SENAI  </strong></h4><h4 class="working">[WORKING PROGRESS]</h4></div>
+            <p class="carreira-texto">Iniciei meus estudos no mês de Janeiro de 2023 e espero aprender muito sobre a area de técnologia.</p> 
+        <h3 class="subtitulo-background-4">Links</h3>
+        <nav class="botoes-link">
+            <a class="insta" href="https://www.instagram.com/jowbergamo/">Instagram</a>
+            <a class="linkedin" href="https://www.linkedin.com/in/jonathanbergamo/">Linkedin</a>
+        </nav>
+        <h3 class="subtitulo-background-3">Skills</h3>
+        <div class = "area-total">
+            <div class = "skills-area1">
+                <div class = "secao">
+                    <p class = "skills-text">Trabalho em Equipe</p>
+                    <hr class = "line100"></hr>
+                </div>
+                <div class = "secao">
+                    <p class = "skills-text">Facilidade de Aprendizado</p>
+                    <hr class = "line100"></hr>
+                </div>
+                <div class = "secao">
+                    <p class = "skills-text">Comunicação</p>
+                    <hr class = "line80"></hr>
+                </div>
+                <div class = "secao">
+                    <p class = "skills-text">JavaScript</p>
+                    <hr class = "line50"></hr>
+                </div>
+                <div class = "secao">
+                    <p class = "skills-text">Python</p>
+                    <hr class = "line50"></hr>
+                </div>
+            </div>
+            <div class = "skills-area2">
+                <div class = "secao">
+                    <p class = "skills-text">UI/UX Design</p>
+                    <hr class = "line50"></hr>
+                </div>
+                <div class = "secao">
+                    <p class = "skills-text">Photoshop</p>
+                    <hr class = "line100"></hr>
+                </div>
+                <div class = "secao">
+                    <p class = "skills-text">Microsoft Excel</p>
+                    <hr class = "line50"></hr>
+                </div>
+                <div class = "secao">
+                    <p class = "skills-text">Adaptabilidade</p>
+                    <hr class = "line80"></hr>
+                </div>
+                <div class = "secao">
+                    <p class = "skills-text">Proatividade</p>
+                    <hr class = "line100"></hr>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bottom">
+    </footer>
+    <script>
+        let progress = document.getElementById("progressbar")
+        let totalHeight = document.body.scrollHeight - window.innerHeight
+        window.onscroll = function(){
+            let progressHeight = (window.pageYOffset / totalHeight) * 100
+            progress.style.height = progressHeight + "%"
+        }
+    </script>
+</body>
+</html>
